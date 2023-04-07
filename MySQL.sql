@@ -15,3 +15,7 @@ VALUES("Mariane",25,875.49,"Desenvolvedora Java");
 SELECT * FROM tb_colaboradores;
 SELECT * FROM tb_colaboradores WHERE salario > 2000;
 SELECT * FROM tb_colaboradores WHERE salario < 2000;
+
+UPDATE tb_colaboradores
+SET salario = 999.99
+WHERE id=1;
