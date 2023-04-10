@@ -92,3 +92,10 @@ INSERT INTO tb_produtos(nome, quantidade, preco)
 VALUES("Sacola Verde", 1118, 0.50);
 
 SELECT * FROM tb_produtos ORDER BY quantidade;
+
+SELECT * FROM tb_produtos INNER JOIN tb_categorias 
+ON tb_produtos.categorias_id = tb_categorias.id;
+
+SELECT * FROM tb_produtos INNER JOIN tb_categorias 
+ON tb_produtos.categorias_id = tb_categorias.id
+WHERE tb_categorias.id=1;
